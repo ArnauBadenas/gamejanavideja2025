@@ -609,11 +609,11 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 11612
+  m_ColorTemperature: 14437
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -633,7 +633,7 @@ Transform:
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7080409, y: -0.17605111, z: 0.18971896, w: 0.6570318}
-  m_LocalPosition: {x: -58, y: 3, z: 0}
+  m_LocalPosition: {x: 2.6, y: 41.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1105,7 +1105,7 @@ PrefabInstance:
     - target: {fileID: 5438836132567195117, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: -629719859055844128, guid: ff50379ed62b9d34685c32bf1a2d509c, type: 3}
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 5763950804697881103, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
