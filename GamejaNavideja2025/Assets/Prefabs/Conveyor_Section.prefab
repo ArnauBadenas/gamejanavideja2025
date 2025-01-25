@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e206583ab241f4a84ffd05da0d233b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conveyorMovementSpeed: 100
+  conveyorMovementSpeed: 50
   rb: {fileID: 0}
 --- !u!54 &3680962593270580903
 Rigidbody:

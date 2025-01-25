@@ -470,6 +470,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conveyorSection:
   - {fileID: 8666957068407210484, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}
+  - {fileID: 8666957068407210484, guid: 1917dca5de5a10549a8c632a693abdea, type: 3}
+  - {fileID: 8666957068407210484, guid: 7c08316edea467f41a14ac41a75f1800, type: 3}
 --- !u!1 &342277805
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4134566816352712711, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}
       propertyPath: conveyorMovementSpeed
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4761649390637556123, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}
       propertyPath: m_LocalScale.z
