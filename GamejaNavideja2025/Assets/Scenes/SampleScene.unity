@@ -834,7 +834,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -95.525475, y: 0, z: -90.34423, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1066,6 +1066,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.54
       objectReference: {fileID: 0}
+    - target: {fileID: 2574640704091167199, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2649074476527251381, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}
       propertyPath: m_LocalPosition.y
       value: 6.4
@@ -1081,6 +1085,10 @@ PrefabInstance:
     - target: {fileID: 4098427178872633263, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126179154878189091, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4134566816352712711, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}
       propertyPath: conveyorMovementSpeed
@@ -1152,6 +1160,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6783983975119766936, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898095284392470000, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6908616663170629163, guid: d9036ce3b710cb34c8cec4eb5a85c7a7, type: 3}

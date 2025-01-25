@@ -29,14 +29,23 @@ public class TimerManager : MonoBehaviour
     void UpdateTimerText()
     {
         int timeInSeconds = (int)elapsedTime;
-        int minutes = 0;
-        if (timeInSeconds >= 60)
-        {
-            minutes = (int)((timeInSeconds) / 60f);
-            timeInSeconds += (minutes * 60);
-        }
+        int minutes = timeInSeconds / 60; // Calculate minutes
+        int seconds = timeInSeconds % 60; // Calculate remaining seconds
 
-        timerText.text = timeInSeconds.ToString();
+        FormatTimerText(minutes, seconds);
+        
+
     }
-    
+
+    private void FormatTimerText(int minutes, int seconds)
+    {
+        if (minutes > 0)
+        {
+            timerText.text = $"{minutes}:{seconds}";
+        }
+        else
+        {
+            timerText.text = $"{seconds}";
+        }
+    }
 }
