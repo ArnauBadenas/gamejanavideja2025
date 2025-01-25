@@ -29,6 +29,7 @@ public class TimerManager : MonoBehaviour
     void UpdateTimerText()
     {
         int timeInSeconds = (int)elapsedTime;
+        ScoreManager.instance.score = timeInSeconds;
         int minutes = timeInSeconds / 60; // Calculate minutes
         int seconds = timeInSeconds % 60; // Calculate remaining seconds
 
