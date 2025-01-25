@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public float jumpForce;
     public Rigidbody rb;
-    private bool isGrounded = true;
+    private bool _isGrounded = true;
     
 
     public void Start()
@@ -33,20 +33,21 @@ public class PlayerMovement : MonoBehaviour
     public void Jump()
     {
         
-        if (InputManager.instance.jump.TAP && isGrounded)
+        if (InputManager.instance.jump.TAP && _isGrounded)
         {
+            FindObjectOfType<AudioManager>().Play("Jump");
             Vector3 movement = new Vector3(0,jumpForce,0);
             rb.AddForce(movement, ForceMode.Impulse);
-            isGrounded = false;
+            _isGrounded = false;
         }
     }
 
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log(other.gameObject.name);
+        
         if (other.gameObject.CompareTag("Ground"))
         {
-            isGrounded = true;
+            _isGrounded = true;
         }
         if(other.gameObject.CompareTag("Wall"))
         {

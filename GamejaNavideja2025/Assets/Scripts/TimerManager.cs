@@ -41,11 +41,11 @@ public class TimerManager : MonoBehaviour
     {
         if (minutes > 0)
         {
-            timerText.text = $"{minutes}:{seconds}";
+            timerText.text = $"{minutes}:{seconds:D2}";
         }
         else
         {
-            timerText.text = $"{seconds}";
+            timerText.text = $"{seconds:D2}";
         }
     }
 }
