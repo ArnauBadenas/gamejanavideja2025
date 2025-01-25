@@ -18,7 +18,16 @@ public class SpeedManager : MonoBehaviour
         }
         return conveyorMovementSpeed;
     }
-    
+
+    private void Update()
+    {
+        if (conveyorMovementSpeed <= 100)
+        {
+            UpdateSpeed();
+        }
+        
+    }
+
     private void Awake()
     {
         if (Instance == null)
