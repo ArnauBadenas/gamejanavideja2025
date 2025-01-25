@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if(other.gameObject.CompareTag("Wall"))
         {
-            
+            SpeedManager.Instance.conveyorMovementSpeed = 50f;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

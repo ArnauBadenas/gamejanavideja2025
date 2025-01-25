@@ -7,13 +7,13 @@ public class SpeedManager : MonoBehaviour
     
     public float conveyorMovementSpeed;
     public float speedIncreaseRate = 0.1f;
-    private float timeSinceLastIncrease = 0f;
+    private float _timeSinceLastIncrease = 0f;
     private float UpdateSpeed()
     {
-        timeSinceLastIncrease += Time.deltaTime;
-        if (timeSinceLastIncrease >= speedIncreaseRate)
+        _timeSinceLastIncrease += Time.deltaTime;
+        if (_timeSinceLastIncrease >= speedIncreaseRate)
         {
-            timeSinceLastIncrease = 0f;
+            _timeSinceLastIncrease = 0f;
             conveyorMovementSpeed+=speedIncreaseRate;
         }
         return conveyorMovementSpeed;

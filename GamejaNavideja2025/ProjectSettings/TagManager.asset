@@ -8,6 +8,7 @@ TagManager:
   - Destroy
   - Ground
   - Wall
+  - TimerText
   layers:
   - Default
   - TransparentFX
