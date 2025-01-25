@@ -12,7 +12,7 @@ public class SectionTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("ConveyorTrigger"))
         {
             //Quaternion.identity cause it spawns with no rotation :)
-            Instantiate(conveyorSection[Random.Range(0,conveyorSection.Length-1)], new Vector3(0,0,other.gameObject.transform.position.z+400), Quaternion.identity);
+            Instantiate(conveyorSection[Random.Range(0,conveyorSection.Length-1)], new Vector3(0,0,other.gameObject.transform.position.z+545), Quaternion.identity);
             
         }
         

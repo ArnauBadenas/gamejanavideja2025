@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public void Move()
     {
         Vector3 movement = new Vector3(InputManager.instance.move.x * speed,0,0);
-        rb.AddForce(movement, ForceMode.Force);
+        rb.AddForce(movement, ForceMode.Impulse);
         
     }
 
@@ -42,9 +43,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        Debug.Log(other.gameObject.name);
         if (other.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+        }
+        if(other.gameObject.CompareTag("Wall"))
+        {
+            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
     
