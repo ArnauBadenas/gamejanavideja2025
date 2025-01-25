@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ConveyorTrigger
   - Destroy
+  - Ground
   layers:
   - Default
   - TransparentFX

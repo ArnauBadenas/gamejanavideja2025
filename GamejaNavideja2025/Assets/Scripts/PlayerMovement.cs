@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public float jumpForce;
     public Rigidbody rb;
+    private bool isGrounded = true;
     
 
     public void Start()
@@ -15,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     
     public void FixedUpdate()
     {
+        
         Move();
         Jump();
     }
@@ -22,16 +24,29 @@ public class PlayerMovement : MonoBehaviour
     //It moves the player
     public void Move()
     {
-        Vector3 movement = new Vector3(InputManager.instance.move.x * speed * Time.fixedDeltaTime,0,0);
-        rb.MovePosition(rb.position + movement);
+        Vector3 movement = new Vector3(InputManager.instance.move.x * speed,0,0);
+        rb.AddForce(movement, ForceMode.Force);
+        
     }
 
     public void Jump()
     {
-        if (InputManager.instance.jump.HOLD)
+        
+        if (InputManager.instance.jump.TAP && isGrounded)
         {
-            Vector3 movement = new Vector3(0,jumpForce * Time.fixedDeltaTime,0);
-            rb.MovePosition(rb.position + movement);
+            Vector3 movement = new Vector3(0,jumpForce,0);
+            rb.AddForce(movement, ForceMode.Impulse);
+            isGrounded = false;
         }
     }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
+    
+    
 }

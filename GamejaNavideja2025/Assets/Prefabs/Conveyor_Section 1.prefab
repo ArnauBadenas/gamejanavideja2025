@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 4134566816352712711}
   - component: {fileID: 3680962593270580903}
   m_Layer: 0
-  m_Name: Conveyor_Section
+  m_Name: Conveyor_Section 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
