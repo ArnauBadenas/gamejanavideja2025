@@ -504,7 +504,6 @@ GameObject:
   - component: {fileID: 42474486}
   - component: {fileID: 42474485}
   - component: {fileID: 42474484}
-  - component: {fileID: 42474483}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -512,19 +511,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &42474483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42474482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5873606343b48a841a8a6f17a82dc941, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
 --- !u!114 &42474484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1604,7 +1590,7 @@ GameObject:
   - component: {fileID: 799705122}
   - component: {fileID: 799705121}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: VideoScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1626,7 +1612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 361, y: 2}
+  m_AnchoredPosition: {x: 358, y: 2}
   m_SizeDelta: {x: 2876, y: 2158}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &799705121
@@ -2182,7 +2168,7 @@ VideoPlayer:
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
+  m_AudioOutputMode: 0
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
   m_Url: 
@@ -2436,7 +2422,7 @@ GameObject:
   - component: {fileID: 1502255119}
   - component: {fileID: 1502255118}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: backgroundForVideo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2528,8 +2514,8 @@ RectTransform:
   - {fileID: 1502255117}
   - {fileID: 1439098025}
   - {fileID: 1435148632}
-  - {fileID: 799705120}
   - {fileID: 323886622}
+  - {fileID: 799705120}
   m_Father: {fileID: 12686994}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
