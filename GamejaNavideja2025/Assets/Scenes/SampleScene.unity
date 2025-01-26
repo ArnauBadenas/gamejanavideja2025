@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -264,12 +265,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2044961, y: 0, z: 0, w: 0.97886735}
-  m_LocalPosition: {x: 0, y: 6.91, z: -9.3}
+  m_LocalRotation: {x: 0.2044961, y: -0, z: -0, w: 0.97886735}
+  m_LocalPosition: {x: -0.47, y: 9.809999, z: -203.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 336622168}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 23.6, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
@@ -315,6 +316,19 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db83f8f4b27e9343869fb6da77758d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 336622164}
 --- !u!1 &336622164
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,8 +440,7 @@ Transform:
   m_LocalPosition: {x: -0.47, y: 2.9, z: -194.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 330585546}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &336622169
@@ -443,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  jumpForce: 10
+  jumpForce: 12
   rb: {fileID: 0}
 --- !u!54 &336622170
 Rigidbody:
@@ -1608,6 +1621,7 @@ SceneRoots:
   - {fileID: 153868951}
   - {fileID: 410087041}
   - {fileID: 832575519}
+  - {fileID: 330585546}
   - {fileID: 336622168}
   - {fileID: 8988181998051344909}
   - {fileID: 342277807}
