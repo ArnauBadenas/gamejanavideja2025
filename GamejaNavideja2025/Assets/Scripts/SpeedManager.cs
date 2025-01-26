@@ -6,7 +6,7 @@ public class SpeedManager : MonoBehaviour
     public static SpeedManager Instance { get; private set; } 
     
     public float conveyorMovementSpeed;
-    public float speedIncreaseRate = 0.1f;
+    public float speedIncreaseRate = 0.3f;
     private float _timeSinceLastIncrease = 0f;
     private float UpdateSpeed()
     {
@@ -21,7 +21,7 @@ public class SpeedManager : MonoBehaviour
 
     private void Update()
     {
-        if (conveyorMovementSpeed <= 100)
+        if (conveyorMovementSpeed <= 200)
         {
             UpdateSpeed();
         }

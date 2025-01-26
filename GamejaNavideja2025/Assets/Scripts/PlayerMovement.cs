@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         
         if (InputManager.instance.jump.TAP && _isGrounded)
         {
-            FindObjectOfType<AudioManager>().Play("Jump");
+            FindFirstObjectByType<AudioManager>().Play("Jump");
             Vector3 movement = new Vector3(0,jumpForce,0);
             rb.AddForce(movement, ForceMode.Impulse);
             _isGrounded = false;
